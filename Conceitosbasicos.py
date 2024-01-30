@@ -122,3 +122,13 @@ minutos = (horas_exercicios * 4) * 60
 calorias_gastas = (minutos * 5)
 
 print(f"A quantidade de calorias (cal) gasta em um mês é: {calorias_gastas:.2f}")
+
+## estudos de if, else, while e for
+
+frutas = ['Maçã', 'Banana', 'Uva'] # declarando uma lista
+
+for fruta in frutas: # Para cada fruta na lista frutas
+    print(fruta)    # print as frutas da lista
+
+
+
