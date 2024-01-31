@@ -158,4 +158,13 @@ print(f"Quantidade de números ímpares: {numeros_impares}")
 ## Faça um programa que lê três números inteiros e os mostra em ordem crescente.
 
 
+nome = input("Digite seu nome: ")
+
+nome_upper = nome.upper()
+
+print(nome_upper)
+
+nome_invertido = nome_upper[::-1]
+
+print(nome_invertido)
 
