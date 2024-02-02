@@ -61,4 +61,11 @@ print(arr1_flatten)
 ## Considere que você é uma organizadora de um jogo de bingo. Crie um array que irá representar a cartilha desses jogos de bingo. Os números das suas cartelas variam entre 1 e 30, e você terá 10 participantes. Cada cartela terá 12 números (4,3). Crie um array que representa o jogo. 
 
 
+arr1_bingo = np.random.randint(1, 31, size=(10, 4, 3))
 
+print(arr1_bingo)
+
+## Faça o reshape das suas cartelas para que haja 5 cartelas de 4 linhas e 6 colunas.
+
+arr1_bing_r = arr1_bingo.reshape((5, 4, 6))
+print(arr1_bing_r)
