@@ -69,3 +69,53 @@ print(arr1_bingo)
 
 arr1_bing_r = arr1_bingo.reshape((5, 4, 6))
 print(arr1_bing_r)
+
+#Tipos de dados
+
+n = np.random.randint(1, 31, size=(10, 4, 3)).dtype
+print(n)
+
+arr_float32  = np.array([2.14, 6.25, 160.87], dtype=np.float32)
+
+print(arr_float32)
+
+arr_x = np.array([5.4, 6.7, 2.1]).dtype
+print(arr_x)
+
+arr_y = np.array([5, 6, 2]).dtype
+print(arr_y)
+
+array_string = np.array(["Hello", "Oi", "Hola"]).dtype
+print(array_string)
+
+
+x = np.array([3, 5, 2.1])
+print(x[2])
+
+arr_boolean = np.array([True, 3, False])
+print(arr_boolean)
+
+
+y = x.astype(np.int32)
+print(y)
+
+## Selecinando em uma matriz só coluna ou só linha
+
+arr1_bingo = np.random.randint(1, 31, size=(10, 4, 3))
+
+sel = arr1_bingo[0]
+print(sel)
+
+sort = np.sort(arr1_bingo)
+print(sort)
+
+arr10 = np.arange(10)
+print(arr10)
+
+reshape_arr10 = arr10.reshape(2,5)
+print(reshape_arr10)
+
+arr5 = np.array([1,2,3,4,5])
+
+soma_arr = reshape_arr10 + arr5
+print(soma_arr)
