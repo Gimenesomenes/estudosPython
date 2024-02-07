@@ -129,6 +129,28 @@ Você pode ordenar as linhas usando o método <b>sort_values</b>, passando o nom
 > pivot_table(values = , index = )
 
 
+### O que é slicing? 
+
+> Slicing é uma técnica para selecionar elementos consecutivos de objetos. Você também pode cortar DataFrames, mas primeiro precisa ordenar o índice.
+
+
+### Visualizando um agrupamento de dados 
+
+> media = df.groupby('Raça')['Peso'].mean()
+> media.plot(kind='bar')
+
+## Dados não vem perfeitos
+
+> Você pode receber um DataFram com valores ausentes, por isso é importante saber como lidar com eles. A maioria dos dados não é perfeita - sempre existe a possibilidade de que faltem algumas peças no seu conjunto de dados. Em um DataFrame do pandas, os valores ausentes são indicados com N-a-N, que significa "não é um número".
+
+### Detectando valores nulos
+
+> .isna()
+
+
+### Removendo dados nulos
+
+O método <b>dropna</b> no pandas é utilizado para remover linhas ou colunas de um DataFrame que contenham valores nulos (NaN), facilitando a limpeza e preparação dos dados. Ele pode ser aplicado para remover linhas com pelo menos um NaN (padrão) ou colunas específicas, proporcionando flexibilidade na manipulação de conjuntos de dados. 
 
 
 
