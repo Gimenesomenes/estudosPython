@@ -47,7 +47,13 @@ cursor = conexao.cursor()
 
 # FULL JOIN
 
-dados = cursor.execute('SELECT * FROM usuario FULL JOIN gerentes ON usuario.nome = gerentes.nome')
+#dados = cursor.execute('SELECT * FROM usuario FULL JOIN gerentes ON usuario.nome = gerentes.nome')
+
+#SUB-CONSULTAS
+
+dados = cursor.execute('SELECT * FROM usuario WHERE nome IN (SELECT nome FROM gerentes)')
+
+
 for usuario in dados:
     print(usuario)
 #cursor.execute('UPDATE usuario SET endereco="Minas Gerais" where nome="Marcio França"')
