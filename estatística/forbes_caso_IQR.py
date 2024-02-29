@@ -1,4 +1,4 @@
-## Caso forbes utilizando IQR
+ ## Caso forbes utilizando IQR
 
 # importante blibliotecas
 import pandas as pd
@@ -43,7 +43,7 @@ for column in forbes.select_dtypes(include=np.number).columns:
         plt.axvspan(xmin = lower, xmax = forbes[column].min(), alpha=0.2, color='red')
         plt.axvspan(xmin= upper, xmax = forbes[column].max(), alpha=0.2, color='red')
         plt.title("Outliers detectador em {}".format(column))
-#        plt.show()
+        plt.show()
 
 # análise de missing values (dados faltantes)
         
